@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation with Disabled Button</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <!-- Username Input -->
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" class="error"></span><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br><br>
+
+        <!-- Confirm Password Input -->
+        <label for="confirmPassword">Confirm Password: </label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <span id="confirmPasswordError" class="error"></span><br><br>
+
+        <!-- Register Button (Initially Disabled) -->
+        <input type="submit" id="registerButton" value="Register" disabled>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
